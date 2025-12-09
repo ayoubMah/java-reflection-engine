@@ -4,7 +4,7 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ayoub.annotations</groupId>
-    <artifactId>validation-framework</artifactId>
+    <artifactId>mini-spring</artifactId>
     <version>0.0.1</version>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
