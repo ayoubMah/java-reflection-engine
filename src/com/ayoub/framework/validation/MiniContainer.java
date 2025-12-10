@@ -6,7 +6,7 @@ public class MiniContainer {
     BeanDefinition config = new BeanDefinition();
 
     public Object getBean(Class<?> interfaceClass) {
-        Class<?> myClass = config.beanMapping.get(interfaceClass);
+        Class<?> myClass = config.beanMapping.get(interfaceClass); // so when we did map.get(key) we get the value: in this case it's paypal
 
         if (myClass == null) {
             throw new RuntimeException("Bean not found!");
