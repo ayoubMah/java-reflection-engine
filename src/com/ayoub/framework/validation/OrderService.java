@@ -2,14 +2,13 @@ package com.ayoub.framework.validation;
 
 public class OrderService {
 
-    private final PaymentProcess payment;
+    @Autowired
+    private PaymentProcess payment;
 
-    public OrderService(PaymentProcess payment) {
-        this.payment = payment;
-    }
+    // no need the constructor java provides a default empty one
+
 
     public void checkout() {
         payment.pay(100.00);
     }
 }
-
